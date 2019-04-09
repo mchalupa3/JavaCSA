@@ -10,6 +10,9 @@ public class Main {
 	        if(b % 2 == 0){
 	            for(int c = 0; c < 8; c++){
 	                if(c % 2 == 0){
+	                	if(b == 0 || b == 6)
+	                		board[b][c] ="BC";
+	                	else
 	                    board[b][c] = "B ";
                     }
 	                else{
@@ -25,6 +28,9 @@ public class Main {
                     }
 
 	                else{
+	                	if(b == 1 || b == 7)
+	                		board[b][d] = "BC";
+	                	else
 	                    board[b][d] = "B ";
                     }
                 }
